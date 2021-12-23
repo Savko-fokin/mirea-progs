@@ -1,4 +1,4 @@
-function mark_kross!(r::Robot) # - главная функция  
+function main!(r::Robot) # - главная функция  
     for side in (HorizonSide(i) for i=0:3) # - перебор всех возможных направлений
         putmarkers!(r,side)
         move_by_markers(r,inverse(side))
@@ -26,4 +26,4 @@ inverse(side::HorizonSide) = HorizonSide(mod(Int(side)+2, 4))
 
 
 using HorizonSideRobots
-r=Robot(animate=true)
+r=Robot("1.sit", animate=true)
