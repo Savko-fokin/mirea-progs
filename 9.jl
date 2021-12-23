@@ -23,3 +23,8 @@ function find_marker(r,side,num_steps_max)
 end
 
 next(side::HorizonSide)=HorizonSide(mod(Int(side)+1,4))
+
+    
+
+
+r=Robot("9.sit", animate=true)
