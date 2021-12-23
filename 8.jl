@@ -17,4 +17,4 @@ inverse(side::HorizonSide) = HorizonSide(mod(Int(side)+2,4))
 
 
 r=Robot( animate=true)
-main1()
+
